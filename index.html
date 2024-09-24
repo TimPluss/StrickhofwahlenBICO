@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klassensprecher Wahl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Klassensprecher Wahl</h1>
+
+        <!-- Anmeldeformular -->
+        <div id="loginDiv">
+            <h3>Bitte melde dich an, um abzustimmen oder dich zu bewerben</h3>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Dein Name" required>
+                <button type="submit">Anmelden</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <!-- Bewerben oder Abstimmen Bereich -->
+        <div id="mainDiv" style="display:none;">
+            <h3>Was möchtest du tun?</h3>
+            <button id="voteButton">Abstimmen</button>
+            <button id="bewerbenButton">Bewerben</button>
+
+            <!-- Abstimmungsbereich -->
+            <div id="voteDiv" style="display:none;">
+                <h3>Wähle deinen Klassensprecher</h3>
+                <div id="kandidatenListe">
+                    <!-- Hier werden die Kandidaten eingefügt -->
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Bewerbungsformular -->
+            <div id="bewerbungDiv" style="display:none;">
+                <h3>Jetzt bewerben!</h3>
+                <form id="bewerbungForm">
+                    <input type="text" id="bewerberName" placeholder="Dein Name" required>
+                    <textarea id="begruendung" placeholder="Warum möchtest du Klassensprecher werden?" required></textarea>
+                    <input type="file" id="bewerberFoto" accept="image/*" required>
+                    <button type="submit">Bewerben</button>
+                </form>
+            </div>
+
+            <hr>
+
+            <!-- Übersicht aller Bewerber -->
+            <div id="bewerberListeDiv">
+                <h3>Alle Bewerber</h3>
+                <div id="bewerberListe">
+                    <!-- Bewerberübersicht -->
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Ergebnisse -->
+            <div id="ergebnisse">
+                <h3>Aktuelle Ergebnisse:</h3>
+                <!-- Hier erscheinen die Ergebnisse -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
